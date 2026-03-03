@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Combustivel_MAUI.MainPage">
+
+    <StackLayout Orientation="Vertical" Spacing="20" Padding="20">
+        <Label Text="Comparação de Combustíveis" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Informe o preço da gasolina:"/>
+        <Entry x:Name="txt_gasolina" Placeholder="R$" Keyboard="Numeric"/>
+
+        <Label Text="Informe o preço do etanol:"/>
+        <Entry x:Name="txt_etanol" Placeholder="R$" Keyboard="Numeric"/>
+
+        <Label x:Name="txt_resultado" Text="Resultado: ..." FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+
+        <Button x:Name="btn_verificar" Text="Verificar" Clicked="btn_verificar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
